@@ -3,10 +3,10 @@ var textbox = document.getElementById('textbox');
 var chatContainer = document.getElementById('chatContainer');
 
 var arrayofPossibleMessage = [
-  { message: "hi", response: "hello dear !" },
-  { message: "how are you", response: "I am great " },
-  { message: "what is your name", response: "I am a Chatbot " },
-  { message: "who made you", response: "The name vivi made me" },
+  { message: "hi", response: "Hello dear!" },
+  { message: "how are you", response: "I am great!" },
+  { message: "what is your name", response: "I am a Chatbot." },
+  { message: "who made you", response: "The name Vivi made me." },
   {
     message: "How do I make a chocolate cake?",
     response: "To make a chocolate cake, you'll need flour, sugar, cocoa powder, baking powder, eggs, milk, and butter. Mix the ingredients, bake at 350°F (175°C) for 30-35 minutes."
@@ -15,7 +15,6 @@ var arrayofPossibleMessage = [
     message: "What is the tallest mountain in the world?",
     response: "The tallest mountain in the world is Mount Everest, which is about 29,029 feet (8,848 meters) tall."
   },
-  
 ];
 
 function sendMessage(userMessage) {
@@ -42,7 +41,7 @@ function chatbotResponse(userMessage) {
   messageElement.innerHTML = "<span>Chatbot:</span> <span>" + chatbotMessage + "</span>";
 
   setTimeout(() => {
-    messageElement.animate([{ easing: "ease-in", opacity: 0.4 }, { opacity: 1 }], { duration: 1000 });
+    messageElement.animate([{ opacity: 0.4 }, { opacity: 1 }], { duration: 1000 });
 
     chatContainer.appendChild(messageElement);
     chatContainer.scrollTop = chatContainer.scrollHeight; // Auto-scroll to the bottom
@@ -68,7 +67,6 @@ sendBtn.addEventListener('click', function (e) {
     chatbotResponse(userMessage);
   }
 });
-
 
 // script.js
 
