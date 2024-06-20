@@ -1,2 +1,3 @@
 # chatbot
-A chatbot is a software application designed to simulate human conversation, either through text or speech. It utilizes artificial intelligence (AI) and natural language processing (NLP) to understand and respond to user queries or commands in a manner that resembles human interaction.
+
+A chatbot is a software application designed to simulate human conversation, either through text or speech. It utilizes artificial intelligence (AI) and natural language processing (NLP) to understand and respond to user queries or commands in a manner that resembles human interaction. Additionally, databases are configured in the chatbot system to store all the information, ensuring that previous interactions and user data are saved. This setup also allows the chatbot to commence new conversations with context from previous exchanges, improving the overall user experience by providing more accurate and personalized responses.
